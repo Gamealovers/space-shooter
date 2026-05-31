@@ -1,0 +1,7 @@
+# Core dependency (per project spec).
+pygame==2.6.0
+
+# NOTE: On Python 3.13+ the official `pygame` wheel may ship without SDL_image
+# (PNG support). If `pygame.image.get_extended()` returns False, install the
+# drop-in community edition instead — the game code is byte-for-byte compatible:
+#     pip install "pygame-ce>=2.5"
